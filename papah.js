@@ -11,7 +11,7 @@ Yg Reupload Tanpa Kasih Cr
 Sc Akan Saya Encode
 
 Base : Hisoka
-Recode : NazeDev & Papah-Chan ( Nama Lu )
+Recode : ARIFIN DEV ( Nama Lu )
 
 **/
 require('./config')
@@ -1016,7 +1016,7 @@ break
             }
             break
             case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                papah.sendMessage(m.chat, { image: fs.readFileSync('./media/image/papah.jpg'), caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Jika ingin sewa bot atau premium*\n*Silahkan Chat Owner*\n\n*Atau klik link dibawah ini*\n_https://saweria.co/papah_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 0895612153565\n\n_Terima kasih_` }, { quoted: m })
+                papah.sendMessage(m.chat, { image: fs.readFileSync('./media/image/papah.jpg'), caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Jika ingin sewa bot atau premium*\n*Silahkan Chat Owner*\n\n*Atau klik link dibawah ini*\n_https://saweria.co/papah_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 0895419916010\n\n_Terima kasih_` }, { quoted: m })
             }
             break
             case 'sc': {
@@ -1127,7 +1127,7 @@ break
             case 'setowner': {
                if (!isCreator) throw mess.owner
                if (m.text.includes('@')) return m.reply(`*Invalid!*\n\n*Pake Nomer Woy*\n*Jangan Pakai Tag!*`)
-               if (!text) throw `Example : ${prefix + command} 6282287219167`
+               if (!text) throw `Example : ${prefix + command} 62895419916010`
               global.owner = text
               global.ownernomer = text
               m.reply(`Owner berhasil diubah menjadi\n\n⭔ Owner : ${global.owner}\n⭔ OwnerNumber : ${global.ownernomer}`)
@@ -1201,7 +1201,7 @@ m.reply(`*Nomor wa.me/${prmin} telah dibanned !*`)
 break
 case 'unban':
   if (!isCreator) return m.reply(mess.owner)
-  if (!q) return m.reply(`Masukan Nomornya contoh: \n${prefix}${command} 628586826398`)
+  if (!q) return m.reply(`Masukan Nomornya contoh: \n${prefix}${command} 62895419916010`)
   if(isNaN(q)) return await m.reply('harus berupa nomor')
   if (q.includes(`+`)) return m.reply('Tidak menggunakan + langsung nomor 6285****')
 prmin = `${q}@s.whatsapp.net`
@@ -2523,7 +2523,7 @@ case 'test':
 ]
 const pahh = {
 text: `Total Hit : ${totalhit}\nHit Today : ${totalhittd}`,
-footer: `© Sad-Bot`,
+footer: `© Fin Bot`,
 buttons: buttons5,
 headerType: 1
 }
@@ -2543,7 +2543,7 @@ let buttonMessage = {
     caption: `*「 GIMAGE SEARCH 」*
  *Query* : ${text}
  *Media Url* : ${images}`,
-    footer: ` © Sad-Bot`,
+    footer: ` © Fin Bot`,
     buttons: buttons,
     headerType: 4
 }
@@ -2639,7 +2639,7 @@ case'gurastick':{
 var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/gura')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "Papah-Chan", })
+encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "ARIFIN", })
 await fs.unlinkSync(encmedia)
 }
 break
@@ -2648,7 +2648,7 @@ case'dogestick':{
 var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/anjing')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "Papah-Chan", })
+encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "ARIFIN", })
 await fs.unlinkSync(encmedia)
 }
 break
@@ -2657,7 +2657,7 @@ case'bucinp' :{
 var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/bucin')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "Papah-Chan", })
+encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "ARIFIN", })
 await fs.unlinkSync(encmedia)
 }
 break
@@ -3076,7 +3076,7 @@ break
             }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) throw `Example : ${prefix + command} 6285822347348`
+                if (!Number(text)) throw `Example : ${prefix + command} 62895419916010`
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return m.reply(anu.message)
                 papah.sendText(m.chat, `⭔ *Nomor HP :* ${anu.message.nomer_hp}\n⭔ *Angka Shuzi :* ${anu.message.angka_shuzi}\n⭔ *Energi Positif :*\n- Kekayaan : ${anu.message.energi_positif.kekayaan}\n- Kesehatan : ${anu.message.energi_positif.kesehatan}\n- Cinta : ${anu.message.energi_positif.cinta}\n- Kestabilan : ${anu.message.energi_positif.kestabilan}\n- Persentase : ${anu.message.energi_positif.persentase}\n⭔ *Energi Negatif :*\n- Perselisihan : ${anu.message.energi_negatif.perselisihan}\n- Kehilangan : ${anu.message.energi_negatif.kehilangan}\n- Malapetaka : ${anu.message.energi_negatif.malapetaka}\n- Kehancuran : ${anu.message.energi_negatif.kehancuran}\n- Persentase : ${anu.message.energi_negatif.persentase}`, m)
@@ -4004,7 +4004,7 @@ let capt = `⭔ Title: ${judul}
             case 'rules': {
 rules = `*Rules BOT*
 
-Sad-Bot merupakan sebuah Robot WhatsApp yang diprogram untuk melakukan perintah tertentu secara otomatis.
+Fin Bot merupakan sebuah Robot WhatsApp yang diprogram untuk melakukan perintah tertentu secara otomatis.
 Setiap respon atau balasan yang dilakukan oleh bot bukan dari Manusia.
 
 Dengan memakai bot ini maka kamu *setuju* dengan syarat dan kondisi sbg berikut:
@@ -4022,20 +4022,20 @@ let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu'
             break
             case 'sponsor': {
             if (!m.isGroup) throw mess.group
-            let qontak = `6285718971848@s.whatsapp.net`
-let dana = `6281911500445@s.whatsapp.net`
-let shopeeotp = `6285574670796@s.whatsapp.net`
-let shopee = `622150996855@s.whatsapp.net`
-let tokopedia = `6281197911081@s.whatsapp.net`
-let smartfrend = `628881212888@s.whatsapp.net`
-let getcontact = `447990653714@s.whatsapp.net`
-let facebook = `447710173736@s.whatsapp.net`
-let pasarpolis = `6287700178000@s.whatsapp.net`
-let kominfo = `628119224545@s.whatsapp.net`
-let alfamart = `628111500959@s.whatsapp.net`
+            let qontak = `62895419916010@s.whatsapp.net`
+let dana = `62895419916010@s.whatsapp.net`
+let shopeeotp = `62895419916010@s.whatsapp.net`
+let shopee = `62895419916010@s.whatsapp.net`
+let tokopedia = `62895419916010@s.whatsapp.net`
+let smartfrend = `62895419916010@s.whatsapp.net`
+let getcontact = `62895419916010@s.whatsapp.net`
+let facebook = `62895419916010@s.whatsapp.net`
+let pasarpolis = `62895419916010@s.whatsapp.net`
+let kominfo = `62895419916010@s.whatsapp.net`
+let alfamart = `62895419916010@s.whatsapp.net`
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*Bot by Papah-Chan* 
+            let jawab = `*Bot by ARIFIN* 
 -Creator :  @${ownernya.split('@')[0]}\n-Lu : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}\n- :  @${qontak.split('@')[0]}\n- :  @${dana.split('@')[0]}\n- :  @${shopeeotp.split('@')[0]}\n- :  @${shopee.split('@')[0]}\n- :  @${tokopedia.split('@')[0]}\n- :  @${smartfrend.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${facebook.split('@')[0]}\n- :  @${pasarpolis.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${kominfo.split('@')[0]}\n- :  @${alfamart.split('@')[0]}`
             let ments = [ownernya, me, ini_mark, qontak, dana, shopeeotp, shopee, tokopedia, smartfrend, getcontact, facebook, pasarpolis, kominfo, alfamart]
             let buttons = [
@@ -4577,11 +4577,11 @@ _*🇯🇵 : このボットの機能のリスト*_.
 
 *[   INFORMATION   ]*
 _⫹⫺ Your Name : ${m.pushName}_
-_⫹⫺ Bot Name : Sad-Bot_
+_⫹⫺ Bot Name : 𝙁𝙞𝙣 𝘽𝙊𝙏_
 _⫹⫺ Library : Baileys-Md_
 _⫹⫺ Version : 4.0.4_
 _⫹⫺ Language : Javascript_
-_⫹⫺ Recoder : 𝙋𝙖𝙥𝙖𝙝-𝘾𝙝𝙖𝙣_
+_⫹⫺ Recoder : 𝘼𝙍𝙄𝙁𝙄𝙉_
 _⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
 _⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_                
 _⫹⫺ Bot Mode : Public Mode_
@@ -4969,20 +4969,20 @@ _⫹⫺ Fitur : 200_
 │
 ╰────❍
 
--- *C R E D I T S* --
-Tuhan Yang Maha Esa
-DikaArdnt As Developer
-NazeDev As Owner Base
-Papah As Recode
-KyuraSaja
-Nurutomo
-Contributors in GitHub
-RestAPI
-BochilGaming
-Mayumi Kun
-Iqbal
-Eren
-User Sad Bot`
+-- *F r i e n d* --
+⭔ Ahmad Dwi Ananda
+⭔ Royyan
+⭔ Radit
+⭔ Adha
+⭔ Rafli
+⭔ Angga
+⭔ Hasan
+⭔ Aulia
+⭔ Maulana
+⭔ Dhani
+⭔ Yusfi
+⭔ Kd Muat Lagi 🗿
+
                 let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
             papah.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(faall, 300, 200)}, buttons: buttons, footer: nyoutube, mentions: ments})
             }
