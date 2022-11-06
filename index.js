@@ -116,15 +116,15 @@ async function startpapah() {
        }
        let wm_papahdev = { url : ppgc }
        if (pea[0].announce == true) {
-       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by papah Dev`, wm_papahdev, [])
+       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by Fin Dev`, wm_papahdev, [])
        } else if(pea[0].announce == false) {
-       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by papah Dev`, wm_papahdev, [])
+       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by Fin Dev`, wm_papahdev, [])
        } else if (pea[0].restrict == true) {
-       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by papah Dev`, wm_papahdev, [])
+       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by Fin Dev`, wm_papahdev, [])
        } else if (pea[0].restrict == false) {
-       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by papah Dev`, wm_papahdev, [])
+       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by Fin Dev`, wm_papahdev, [])
        } else {
-       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by papah Dev`, wm_papahdev, [])
+       papah.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by Fin Dev`, wm_papahdev, [])
      }
     })
 
